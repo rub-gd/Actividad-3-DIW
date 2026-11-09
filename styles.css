@@ -1,0 +1,36 @@
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.faq-question {
+  padding: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  float: right;
+  content: "+";
+}
+
+.faq-item[open] .faq-question::after {
+  content: "−";
+}
+
+summary:focus-visible {
+  outline: 3px solid #005a9c;
+}
+
+.faq-answer p {
+  padding: 0 10px;
+}
